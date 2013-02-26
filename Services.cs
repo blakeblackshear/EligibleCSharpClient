@@ -50,6 +50,7 @@ namespace Eligible
         /// <param name="patientFirstName">The first name of the patient</param>
         /// <param name="dateOfBirth">The Date of Birth of the patient</param>
         /// <param name="insuranceMemberNumber">The insurance card number of the patient</param>
+        /// <param name="serviceCode">Code for the service being provided</param>
         /// <returns></returns>
         public EligibleService GetAll(string insuranceCompany, string payerId, string patientLastName, string patientFirstName, DateTime? dateOfBirth, string insuranceMemberNumber, string serviceCode)
         {
@@ -67,6 +68,7 @@ namespace Eligible
         /// <param name="patientFirstName">The first name of the patient</param>
         /// <param name="dateOfBirth">The Date of Birth of the patient</param>
         /// <param name="insuranceMemberNumber">The insurance card number of the patient</param>
+        /// <param name="serviceCode">Code for the service being provided</param>
         /// <returns></returns>
         public EligibleService GetVisits(string insuranceCompany, string payerId, string patientLastName, string patientFirstName, DateTime? dateOfBirth, string insuranceMemberNumber, string serviceCode)
         {
@@ -84,6 +86,7 @@ namespace Eligible
         /// <param name="patientFirstName">The first name of the patient</param>
         /// <param name="dateOfBirth">The Date of Birth of the patient</param>
         /// <param name="insuranceMemberNumber">The insurance card number of the patient</param>
+        /// <param name="serviceCode">Code for the service being provided</param>
         /// <returns></returns>
         public EligibleService GetCopayment(string insuranceCompany, string payerId, string patientLastName, string patientFirstName, DateTime? dateOfBirth, string insuranceMemberNumber, string serviceCode)
         {
@@ -101,6 +104,7 @@ namespace Eligible
         /// <param name="patientFirstName">The first name of the patient</param>
         /// <param name="dateOfBirth">The Date of Birth of the patient</param>
         /// <param name="insuranceMemberNumber">The insurance card number of the patient</param>
+        /// <param name="serviceCode">Code for the service being provided</param>
         /// <returns></returns>
         public EligibleService GetCoinsurance(string insuranceCompany, string payerId, string patientLastName, string patientFirstName, DateTime? dateOfBirth, string insuranceMemberNumber, string serviceCode)
         {
@@ -110,7 +114,7 @@ namespace Eligible
         } // GetCoinsurance
 
         /// <summary>
-        /// Returns coinsurance responsibility of patient
+        /// Returns patient's deductible
         /// </summary>
         /// <param name="insuranceCompany">The name of the health care provider</param>
         /// <param name="payerId">The code for the health care provider</param>
@@ -118,6 +122,7 @@ namespace Eligible
         /// <param name="patientFirstName">The first name of the patient</param>
         /// <param name="dateOfBirth">The Date of Birth of the patient</param>
         /// <param name="insuranceMemberNumber">The insurance card number of the patient</param>
+        /// <param name="serviceCode">Code for the service being provided</param>
         /// <returns></returns>
         public EligibleService GetDeductible(string insuranceCompany, string payerId, string patientLastName, string patientFirstName, DateTime? dateOfBirth, string insuranceMemberNumber, string serviceCode)
         {
